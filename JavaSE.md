@@ -1433,7 +1433,7 @@ LocalDate nowDate = LocalDate.now();
 int year = nowDate.getYear();
 int month = nowDate.getMonthValue();
 int day = nowDate.getDayOfMonth();
-LocalDate bt = LocalDate.of(1998, 1, 27);
+LocalDate bt = LocalDate.of(2022, 08, 27);
 // 不可变对象，每次修改返回新时间对象
 LocalDate yt = nowDate.minusDays();
 System.out.println(nowDate.equals(yt));
@@ -1465,7 +1465,7 @@ LocalDateTime ldt1 = LocalDataTime.parse("2022-09-04 20:21:43", dtf);
 
 ```java
 LocalDate today = LocalDate.now();
-LocalDate btd = LocalDate.of(1998, 1, 27);
+LocalDate btd = LocalDate.of(2022, 08, 27);
 Period period = Period.between(btd, today);
 Int years = period.getYears();
 // Duration一般用于LocalDateTime，也可以用于时间戳
